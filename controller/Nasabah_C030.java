@@ -131,7 +131,7 @@ public class Nasabah_C030 implements ActionListener, KeyListener {
                     rs.getString("Nama030"),
                     rs.getString("Alamat030"),
                     rs.getString("Pekerjaan030"),
-                    rs.getInt("GajiPokok030")
+                    rs.getDouble("GajiPokok030")
                 };
                 view.modelTabel.addRow(data);
             }
@@ -155,7 +155,7 @@ public class Nasabah_C030 implements ActionListener, KeyListener {
                     view.tfNama030.setText(rs.getString("Nama030"));
                     view.taAlamat030.setText(rs.getString("Alamat030"));
                     view.tfPekerjaan030.setText(rs.getString("Pekerjaan030"));
-                    view.tfGajiPokok030.setText(String.valueOf(rs.getInt("GajiPokok030")));
+                    view.tfGajiPokok030.setText(String.valueOf(rs.getDouble("GajiPokok030")));
                     JOptionPane.showMessageDialog(view, "Data Ditemukan!");
                 } else {
                     JOptionPane.showMessageDialog(view, "Data Kode Nasabah tidak ditemukan!");
